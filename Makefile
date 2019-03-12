@@ -16,7 +16,7 @@ pflags += --lua-filter=./filters/task-list.lua
 #cpflags += -V include-after='<script>document.addEventListener("DOMContentLoaded", () => twemoji.parse(document.body, { folder: "svg", ext: ".svg" }));</script>'
 #cpflags := -V include-after='<script>document.addEventListener("DOMContentLoaded", () => twemoji.parse(document.body, { folder: "svg", ext: ".svg" }));</script>'
 #cpflags += -V include-after='<script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.5" async></script>'
-cpflags := -V include-after='<script src="https://utteranc.es/client.js" repo="mt-caret/nippo" issue-term="title" theme="github-light" crossorigin="anonymous" async></script>'
+cpflags := -V include-after='<script src="https://utteranc.es/client.js" repo="mt-caret/papers" issue-term="title" theme="github-light" crossorigin="anonymous" async></script>'
 
 build/img/%.png: img/%.png
 	@mkdir -p build/img

@@ -3,7 +3,7 @@ set -euo pipefail
 
 cat << EOF
 ---
-title: surveys
+title: papers
 ---
 <!-- no RSS feeds, check back every day :love: -->
 EOF
