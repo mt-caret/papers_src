@@ -10,9 +10,9 @@ The title says it all: the main point of the paper is that the claims made by
 the paper introducing WebAssembly[^wasm-intro] are not as impressive as it
 seems; the authors argue that the benchmarks used (PolyBenchC) are not
 representative of typical WebAssembly use cases. It supports its claim by
-porting and benchmarking with the SPEC CPU benchmark suite (BROWSIX-SPEC) to the
-browser by developing an extension (BROWSIX-WASM) to BROWSIX, which exposes a
-Unix-compatible interface in the browser.
+porting to the browser and benchmarking with the SPEC CPU benchmark suite
+(BROWSIX-SPEC) by developing an extension (BROWSIX-WASM) to BROWSIX, which
+exposes a Unix-compatible interface in the browser.
 
 [^wasm-intro]:
 [Bringing the web up to speed with WebAssembly](https://dl.acm.org/citation.cfm?id=3062363)
