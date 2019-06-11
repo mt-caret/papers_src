@@ -3,14 +3,15 @@ set -euo pipefail
 
 cat << EOF
 ---
-title: papers
+title: comp-prog
 ---
 <!-- no RSS feeds, check back every day :love: -->
 EOF
 ls src/*.md | sort -nr |
 while read -r f; do
-  date=$(basename "$f" .md | sed -e "s/src\///")
+  outfile=$(basename "$f" .md | sed -e "s/src\///")
+  date=$(./scripts/extract_date.sh "$f")
   title=$(./scripts/extract_title.sh "$f")
-  echo "- [$date - $title](./$date.html)"
+  echo "- [$date - $title](./$outfile.html)"
 done
 

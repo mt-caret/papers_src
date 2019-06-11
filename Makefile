@@ -45,8 +45,7 @@ new:
 
 .PHONY: watch
 watch: all
-	@tmux split-window -h "serve --local ./build/"
-	@while sleep 1; do ls src/*.md | entr -c -d make all; done
+	@while sleep 1; do ls src/*.md | entr -cdrs "make all && serve ./build/"; done
 
 .PHONY: deploy
 deploy: all

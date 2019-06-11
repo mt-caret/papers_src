@@ -21,6 +21,6 @@ EOF
 CONTEXT=$(grep -C1 "$1" <<< "$LIST")
 NEXT=$(to_markdown_link "$(head -n 1 <<< "$CONTEXT")")
 PREV=$(to_markdown_link "$(tail -n 1 <<< "$CONTEXT")")
-INDEX='<a href="./index.html">一覧</a>'
+INDEX='<a href="./index.html">index</a>'
 echo -e "$PREV\\n$INDEX\\n$NEXT"
 
