@@ -3,7 +3,7 @@ set -euo pipefail
 
 cat << EOF
 ---
-title: comp-prog
+title: papers
 ---
 <!-- no RSS feeds, check back every day :love: -->
 EOF
