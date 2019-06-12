@@ -1,5 +1,5 @@
 ---
-title: "Mind the Gap: Analyzing the Performance of WebAssembly vs. Native Code"
+title: "Not So Fast: Analyzing the Performance of WebAssembly vs. Native Code"
 date: 2019-06-11
 ---
 
