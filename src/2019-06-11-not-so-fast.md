@@ -39,7 +39,7 @@ native code, especially since both are compiled with the same compiler (clang)
 but with different backends? Is JIT **that** good?
 
 The takeaway seems to be that WebAssembly isn't as fast as stated; but I don't
-think this really matters in terms of real-world implications. As stated by the
-authors themselves, WebAssembly still achieves a 1.3x mean speedup over asm.js
-(matching the numbers reported in [^wasm-intro])
-with negligible JIT-compile times (see Table 2).
+think this really matters in terms of real-world usage. As stated by the authors
+themselves, WebAssembly still achieves a 1.3x mean speedup over asm.js (matching
+the numbers reported in [^wasm-intro]) with negligible JIT-compile times (see
+Table 2).
