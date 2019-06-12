@@ -2,12 +2,13 @@
 set -euo pipefail
 
 function to_markdown_link() {
-  DATE=$(basename "$1" .md | sed -e "s/src\///")
-  if [ "$DATE" == "#" ]; then
+  OUTFILE=$(basename "$1" .md | sed -e "s/src\///")
+  if [ "$OUTFILE" == "#" ]; then
     echo "<a href=\"#\">#</a>"
   else
     TITLE=$(./scripts/extract_title.sh "$1")
-    echo "<a href=\"./$DATE.html\">$DATE - $TITLE</a>"
+    DATE=$(./scripts/extract_date.sh "$1")
+    echo "<a href=\"./$OUTFILE.html\">$DATE - $TITLE</a>"
   fi
 }
 
