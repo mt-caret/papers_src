@@ -5,6 +5,7 @@ date: 2019-06-21
 
 - 2019 IEEE International Solid- State Circuits Conference - (ISSCC)
 - [1.1 Deep Learning Hardware: Past, Present, and Future - IEEE Conference Publication](https://ieeexplore.ieee.org/document/8662396)
+- [Yann LeCun on the future of deep learning hardware](https://ai.facebook.com/blog/yann-lecun-video/)
 
 Not really a paper, but more like an opinion piece?
 
